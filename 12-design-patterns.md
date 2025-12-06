@@ -138,11 +138,7 @@ The first class we need is then an abstract class that defines what it means to 
 public abstract class ShapeFactory {
     public abstract Shape getShape();
 }
-```
 
-Then we define our subclasses for each shape we want to be able to create:
-
-```java
 public class RectangleFactory extends ShapeFactory {
     public Shape getShape() {
         return new Rectangle();
