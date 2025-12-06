@@ -257,16 +257,15 @@ They address the question of how responsibilities and behaviors are distributed 
 For example, consider a class called `Map` that requires a `getDirections` method, which should return a different `String` depending on whether the directions are for driving or public transit.
 ```java
 public class Map {
-
 	private DirectionGenerator dg;
 
 	public Map(DirectionGenerator dg) {
 	    this.dg = dg;
-	  }
+	}
 
 	public getDirections() {
 	    dg.getDirections();
-	   }
+	}
 }
 ```
 
